@@ -5,20 +5,20 @@
 class OrangeClown < Formula
   desc "Orange Clown CLI - manage articles, feeds, newsletters, and newsroom automation from the terminal"
   homepage "https://github.com/elpdev/orange_clown-cli"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/elpdev/orange_clown-cli/releases/download/v0.1.2/orange_clown_0.1.2_darwin_amd64.tar.gz"
-      sha256 "befd3c6c165238c24a77fca7bed749393d5ebf25ad3b9126dc2dad70d1f9d808"
+      url "https://github.com/elpdev/orange_clown-cli/releases/download/v0.1.3/orange_clown_0.1.3_darwin_amd64.tar.gz"
+      sha256 "8a1d76409f7eb9bbf35f3d75030e81bb5e6cfe4857a4d2dfebbebf7e0845b89f"
 
       define_method(:install) do
         bin.install "orange_clown"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/elpdev/orange_clown-cli/releases/download/v0.1.2/orange_clown_0.1.2_darwin_arm64.tar.gz"
-      sha256 "9656eff284e98d5c5d3ce25b616b444df14fa3fd02658f033850cbf845fdc384"
+      url "https://github.com/elpdev/orange_clown-cli/releases/download/v0.1.3/orange_clown_0.1.3_darwin_arm64.tar.gz"
+      sha256 "fc2a2a7562b475dbe0a4e7a5b68269d88d5d39cefb579811697f75c62168b22a"
 
       define_method(:install) do
         bin.install "orange_clown"
@@ -28,15 +28,15 @@ class OrangeClown < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elpdev/orange_clown-cli/releases/download/v0.1.2/orange_clown_0.1.2_linux_amd64.tar.gz"
-      sha256 "6eb8bf4880147657a3fa8b6eec28526875aa662ec5a6375dee4e026933d756ee"
+      url "https://github.com/elpdev/orange_clown-cli/releases/download/v0.1.3/orange_clown_0.1.3_linux_amd64.tar.gz"
+      sha256 "0386759c4b74d8eddf07e81edada894d12ae05ec3df5dc0476b700d143e19a51"
       define_method(:install) do
         bin.install "orange_clown"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elpdev/orange_clown-cli/releases/download/v0.1.2/orange_clown_0.1.2_linux_arm64.tar.gz"
-      sha256 "8c49bd883ee12b9f8f65325f336361bfbfeb34ab962065c23f2e82b7fcc36042"
+      url "https://github.com/elpdev/orange_clown-cli/releases/download/v0.1.3/orange_clown_0.1.3_linux_arm64.tar.gz"
+      sha256 "cba0d74667afa7992aea629b99558bce88ae8441a6fdfb25c8acb4deda6d2362"
       define_method(:install) do
         bin.install "orange_clown"
       end
