@@ -5,20 +5,20 @@
 class ContentFoundry < Formula
   desc "Content Foundry CLI - manage your content pipeline from the terminal"
   homepage "https://github.com/elpdev/content_foundry-cli"
-  version "0.1.10"
+  version "0.1.11"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/elpdev/content_foundry-cli/releases/download/v0.1.10/content_foundry_0.1.10_darwin_amd64.tar.gz"
-      sha256 "fabc24863c06b31741f7202a7891dcc62c8cf240e44cad1c3513db370871d171"
+      url "https://github.com/elpdev/content_foundry-cli/releases/download/v0.1.11/content_foundry_0.1.11_darwin_amd64.tar.gz"
+      sha256 "e316f551fb6ebb884ad35e4bc804ba6a828387e18e859a6432f85c0cd2003d19"
 
       define_method(:install) do
         bin.install "content_foundry"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/elpdev/content_foundry-cli/releases/download/v0.1.10/content_foundry_0.1.10_darwin_arm64.tar.gz"
-      sha256 "e52a3089fd1268756fd452156a7630d424bfb2e7c390b96dbd85f771fae12465"
+      url "https://github.com/elpdev/content_foundry-cli/releases/download/v0.1.11/content_foundry_0.1.11_darwin_arm64.tar.gz"
+      sha256 "cfa32ac800c43454983089a16c16eeabdcfccfdadc6c7f076006ceb31c3b1d52"
 
       define_method(:install) do
         bin.install "content_foundry"
@@ -28,15 +28,15 @@ class ContentFoundry < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elpdev/content_foundry-cli/releases/download/v0.1.10/content_foundry_0.1.10_linux_amd64.tar.gz"
-      sha256 "1fa2b0cc69d28dbd11c47ca1bb50e3b1597362c1b232505251758b71e3d17093"
+      url "https://github.com/elpdev/content_foundry-cli/releases/download/v0.1.11/content_foundry_0.1.11_linux_amd64.tar.gz"
+      sha256 "2664be10bb4ba4089268a60edd567c7779f238b3bebe9159dd289533fe1eb98d"
       define_method(:install) do
         bin.install "content_foundry"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elpdev/content_foundry-cli/releases/download/v0.1.10/content_foundry_0.1.10_linux_arm64.tar.gz"
-      sha256 "5143afde8702cbea27c82adc541745e32d54e87faa63dc0eb28cb7603d0b65de"
+      url "https://github.com/elpdev/content_foundry-cli/releases/download/v0.1.11/content_foundry_0.1.11_linux_arm64.tar.gz"
+      sha256 "6512cd9d8aa413eb6fc7551bce7092d97025501cea259452a00a30a714a785bb"
       define_method(:install) do
         bin.install "content_foundry"
       end
