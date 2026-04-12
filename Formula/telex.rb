@@ -5,20 +5,20 @@
 class Telex < Formula
   desc "Telex CLI for terminal-first workflows"
   homepage "https://github.com/elpdev/telex-cli"
-  version "0.1.9"
+  version "0.1.10"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/elpdev/telex-cli/releases/download/v0.1.9/telex_0.1.9_darwin_amd64.tar.gz"
-      sha256 "866b20d11b3af413a5b21111d7cfae55c36738afb904c8ee1b91dc3764c0b9d7"
+      url "https://github.com/elpdev/telex-cli/releases/download/v0.1.10/telex_0.1.10_darwin_amd64.tar.gz"
+      sha256 "fc0252d2bca52a71ccc55b7d228e72e711828ffba5f86ac4e6b65de8270f1ffe"
 
       define_method(:install) do
         bin.install "telex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/elpdev/telex-cli/releases/download/v0.1.9/telex_0.1.9_darwin_arm64.tar.gz"
-      sha256 "1117232f7c3b7705e90340afe260c867b07ec1e09cd794674bb7739353c5df11"
+      url "https://github.com/elpdev/telex-cli/releases/download/v0.1.10/telex_0.1.10_darwin_arm64.tar.gz"
+      sha256 "9783bad67c587ccf7582ebcb1ed443af2d807eb5d097cffad7b552496a021604"
 
       define_method(:install) do
         bin.install "telex"
@@ -28,15 +28,15 @@ class Telex < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elpdev/telex-cli/releases/download/v0.1.9/telex_0.1.9_linux_amd64.tar.gz"
-      sha256 "7d9895cfbf7c9d65abf17cecea18850a8afbfc38f88b672504b944956fdd346c"
+      url "https://github.com/elpdev/telex-cli/releases/download/v0.1.10/telex_0.1.10_linux_amd64.tar.gz"
+      sha256 "32f6ac1e9e181aa57773032d9e3a4ccf49ecbaae5f54f5d7350320b7b95a40ca"
       define_method(:install) do
         bin.install "telex"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elpdev/telex-cli/releases/download/v0.1.9/telex_0.1.9_linux_arm64.tar.gz"
-      sha256 "ecb3e0ed41b471e647467cfb790a8fb7a906f35b769cf52d84a67fe650d651dc"
+      url "https://github.com/elpdev/telex-cli/releases/download/v0.1.10/telex_0.1.10_linux_arm64.tar.gz"
+      sha256 "9b8ea9ff0606b22d3e18db14379c3c34ee45e0e17d7e3f91b0dd4da516511818"
       define_method(:install) do
         bin.install "telex"
       end
