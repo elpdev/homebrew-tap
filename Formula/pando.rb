@@ -5,13 +5,13 @@
 class Pando < Formula
   desc "Pando — end-to-end encrypted chat over self-hosted relays"
   homepage "https://github.com/elpdev/pando"
-  version "0.26.0"
+  version "0.27.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/elpdev/pando/releases/download/v0.26.0/pando_0.26.0_darwin_amd64.tar.gz"
-      sha256 "b576bf3eb4c575272cf43a9f12c03f12d36f4d3462a2cbb212b57cb16f5a597d"
+      url "https://github.com/elpdev/pando/releases/download/v0.27.0/pando_0.27.0_darwin_amd64.tar.gz"
+      sha256 "1e0323a9bfb74ed36872107b47354ccc2a93e4df4ab0f8ece1a3ac974039ae57"
 
       define_method(:install) do
         bin.install "pando"
@@ -19,8 +19,8 @@ class Pando < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/elpdev/pando/releases/download/v0.26.0/pando_0.26.0_darwin_arm64.tar.gz"
-      sha256 "4555f6d96533c0acab0ade6eadbfcbae21d9ca33e96683524c740f6787f90997"
+      url "https://github.com/elpdev/pando/releases/download/v0.27.0/pando_0.27.0_darwin_arm64.tar.gz"
+      sha256 "ffddb7ac04c1177787dea63ae752ef276b0981fa7d936b47b8667705375593c3"
 
       define_method(:install) do
         bin.install "pando"
@@ -31,16 +31,16 @@ class Pando < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elpdev/pando/releases/download/v0.26.0/pando_0.26.0_linux_amd64.tar.gz"
-      sha256 "d0ad4a417c62f3722c22a95e9ca41133f56926a6bf14869668ac2e3608936ae6"
+      url "https://github.com/elpdev/pando/releases/download/v0.27.0/pando_0.27.0_linux_amd64.tar.gz"
+      sha256 "cf9eb5d4dbc1628f7cf2107e8f9a08aedac52a48554cccac043154de087bb541"
       define_method(:install) do
         bin.install "pando"
         bin.install "pando-relay"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elpdev/pando/releases/download/v0.26.0/pando_0.26.0_linux_arm64.tar.gz"
-      sha256 "c43ecce6aaaf0a2b4ff62a3d77f93b189a9aaf88fe850951708bb2b06d30aa5a"
+      url "https://github.com/elpdev/pando/releases/download/v0.27.0/pando_0.27.0_linux_arm64.tar.gz"
+      sha256 "95c11d8697c2237e9872350d089cd3b2b2d135494c6f91e77c585f6fa6cd61c8"
       define_method(:install) do
         bin.install "pando"
         bin.install "pando-relay"
