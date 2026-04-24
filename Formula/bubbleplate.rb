@@ -5,21 +5,21 @@
 class Bubbleplate < Formula
   desc "Opinionated generator for Go terminal UI projects built with the Charm stack"
   homepage "https://github.com/elpdev/bubbleplate"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/elpdev/bubbleplate/releases/download/v0.2.0/bubbleplate_0.2.0_darwin_amd64.tar.gz"
-      sha256 "71642b7edd7c340defc8b5ca3de6b0084238b0122ebc4d6c9e831a7a7bea8fc2"
+      url "https://github.com/elpdev/bubbleplate/releases/download/v0.3.0/bubbleplate_0.3.0_darwin_amd64.tar.gz"
+      sha256 "9db39de07e77fed27beafa9f6626209bcbe41caa7784df9ef9e0f1e47e336360"
 
       define_method(:install) do
         bin.install "bubbleplate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/elpdev/bubbleplate/releases/download/v0.2.0/bubbleplate_0.2.0_darwin_arm64.tar.gz"
-      sha256 "08a60e69ffe72c7b45a3abbb8fe5d4e051007daeb3b01bea86acd0208d69a948"
+      url "https://github.com/elpdev/bubbleplate/releases/download/v0.3.0/bubbleplate_0.3.0_darwin_arm64.tar.gz"
+      sha256 "837977af7eb0e553f59daa729de4002176ba43b32bb1c9cb7e062f87c30c5105"
 
       define_method(:install) do
         bin.install "bubbleplate"
@@ -29,15 +29,15 @@ class Bubbleplate < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elpdev/bubbleplate/releases/download/v0.2.0/bubbleplate_0.2.0_linux_amd64.tar.gz"
-      sha256 "f2868f33eea0aa64d7cbafd18ec49c6632712539c711ff6fe93e9ac9de51c1c3"
+      url "https://github.com/elpdev/bubbleplate/releases/download/v0.3.0/bubbleplate_0.3.0_linux_amd64.tar.gz"
+      sha256 "837405b6d4a35ab8597065fcbf597e203ba4e47af0de601658390c13525c7a28"
       define_method(:install) do
         bin.install "bubbleplate"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elpdev/bubbleplate/releases/download/v0.2.0/bubbleplate_0.2.0_linux_arm64.tar.gz"
-      sha256 "e95e66e5c992d9d528d0a92aa9165cdd95257b6545a56f2d2d2f7dd3c4670a02"
+      url "https://github.com/elpdev/bubbleplate/releases/download/v0.3.0/bubbleplate_0.3.0_linux_arm64.tar.gz"
+      sha256 "a239ac2efa776418b25d0765a4210548309edc0ebb4d9057e6de479fab2922be"
       define_method(:install) do
         bin.install "bubbleplate"
       end
