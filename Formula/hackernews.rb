@@ -5,21 +5,21 @@
 class Hackernews < Formula
   desc "Terminal UI for browsing Hacker News, reading articles, comments, and saved stories"
   homepage "https://github.com/elpdev/hackernews"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/elpdev/hackernews/releases/download/v0.0.3/hackernews_0.0.3_darwin_amd64.tar.gz"
-      sha256 "5774e49ec1da3a8e2229e61708f496e866d42f3d5884878e5d25fc06f8bd60f9"
+      url "https://github.com/elpdev/hackernews/releases/download/v0.0.4/hackernews_0.0.4_darwin_amd64.tar.gz"
+      sha256 "471c59fe0c4fab1fd9c5bc004f7ee0da18e92c435373121254d67a67f812f894"
 
       define_method(:install) do
         bin.install "hackernews"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/elpdev/hackernews/releases/download/v0.0.3/hackernews_0.0.3_darwin_arm64.tar.gz"
-      sha256 "b9742cee240506d46d6bb693fd29e43c14fb36bbb4acb8eb21199f11cece5846"
+      url "https://github.com/elpdev/hackernews/releases/download/v0.0.4/hackernews_0.0.4_darwin_arm64.tar.gz"
+      sha256 "01e08fe933d4972946e9c1be9f0ffd38074024258b4f27d44cc9fbf5fe157222"
 
       define_method(:install) do
         bin.install "hackernews"
@@ -29,15 +29,15 @@ class Hackernews < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elpdev/hackernews/releases/download/v0.0.3/hackernews_0.0.3_linux_amd64.tar.gz"
-      sha256 "f98900471e98af5584f4ec6b58cebe61782701bcaadd38e5556e98e0a2393729"
+      url "https://github.com/elpdev/hackernews/releases/download/v0.0.4/hackernews_0.0.4_linux_amd64.tar.gz"
+      sha256 "63d87608afff4a90cd3268cd7b50bf86fe6a9066058d2eb0e4e35e5ea8b8ad03"
       define_method(:install) do
         bin.install "hackernews"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elpdev/hackernews/releases/download/v0.0.3/hackernews_0.0.3_linux_arm64.tar.gz"
-      sha256 "7dcb0d18b2d65e123eeb78b7f157ec27de2f54957e6baeea1a7236383d6716b7"
+      url "https://github.com/elpdev/hackernews/releases/download/v0.0.4/hackernews_0.0.4_linux_arm64.tar.gz"
+      sha256 "595acc30e5877d71488da5fa51302f9b315f7df80c0db04722edd8f445dbb320"
       define_method(:install) do
         bin.install "hackernews"
       end
